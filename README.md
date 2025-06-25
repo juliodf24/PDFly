@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📄 PDFly - Atividades em PDF para Estudantes
 
-## Getting Started
+[![Deploy on Vercel](https://img.shields.io/badge/deploy-vercel-000?logo=vercel)](https://vercel.com/)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Made with React](https://img.shields.io/badge/made%20with-react-61dafb?logo=react)
 
-First, run the development server:
+**PDFly** é uma aplicação web desenvolvida com Next.js e React que gera **atividades de revisão em PDF** a partir de conteúdo estruturado em JSON. É ideal para educadores, tutores e estudantes que desejam criar listas de exercícios com gabarito de forma rápida, prática e automatizada.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+link de acesso: https://pdflyplus.vercel.app/
+---
+
+## ✨ Funcionalidades
+
+- 📋 Geração automática de PDFs a partir de um modelo de conteúdo.
+- 🧠 Ideal para atividades de **revisão de conteúdo**, **fixação** e **autoavaliação**.
+- 📄 Visualização integrada do PDF (em desktop).
+- 📲 Download direto em dispositivos móveis.
+- 🧾 Gabarito incluso automaticamente.
+
+---
+
+## 🚀 Como usar
+
+### 1. Copie o modelo de conteúdo
+
+Clique no botão **Copiar modelo** para copiar o conteúdo base:
+
+```json
+{
+  "titulo": "Nome do Documento",
+  "questoes": [
+    {
+      "questao": "1 - Tema da questão",
+      "pergunta": "Texto da pergunta aqui",
+      "alternativas": ["A", "B", "C", "D"]
+    }
+  ],
+  "gabarito": {
+    "titulo": "Gabarito",
+    "questoes": [
+      {
+        "questao": "1",
+        "alternativas": ["A"]
+      }
+    ]
+  }
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Cole seu conteúdo no campo de texto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Adapte o modelo com suas próprias perguntas e respostas e cole no campo indicado.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Gere o documento
 
-## Learn More
+Clique em **Gerar Documento** e o PDF será exibido (em desktop) ou disponibilizado para download (em mobile).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧪 Tecnologias utilizadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js**
+- **React**
+- **@react-pdf/renderer**
+- **Tailwind CSS**
+- **Lucide React**
+- **TypeScript**
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Estrutura do Projeto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+📁 components
+📁 pages
+ └── index.tsx          # Página principal com o formulário e lógica de geração
+📁 public
+ └── logo.png           # Logo do sistema
+ └── Contrato.tsx  # Componente que monta o PDF com base nos dados
+```
+
+---
+
+## 📦 Executar localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/pdfly.git
+cd pdfly
+
+# Instale as dependências
+npm install
+
+# Rode o servidor de desenvolvimento
+npm run dev
+```
+
+Acesse: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📌 Observações
+
+- O conteúdo inserido deve estar no formato JSON válido.
+- Em dispositivos móveis, o PDF é baixado em vez de visualizado.
+- O gabarito é incluído automaticamente no final do documento.
+- Use esse sistema para reforçar conteúdos, revisar temas ou estudar com mais autonomia.
+
+---
+
+## 👨‍🏫 Indicações de uso
+
+- Revisão de conteúdo antes de provas
+- Exercícios para reforço escolar
+- Autoavaliações
+- Atividades complementares
+
+---
