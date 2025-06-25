@@ -1,0 +1,44 @@
+{
+  "titulo": "Quiz de Direito Constitucional",
+  "questoes": [
+    {
+      "questao": "Questão 1: Princípio da Dignidade da Pessoa Humana",
+      "pergunta": "Qual é o princípio fundamental da dignidade da pessoa humana na Constituição Federal de 1988?",
+      "alternativas": [
+        "É um dos fundamentos da República Federativa do Brasil.",
+        "É um objetivo da República Federativa do Brasil.",
+        "É um direito social garantido aos trabalhadores.",
+        "É uma garantia individual apenas para cidadãos brasileiros natos."
+      ]
+    },
+    {
+      "questao": "Questão 2: Separação de Poderes - Elaboração de Leis",
+      "pergunta": "De acordo com a Constituição Federal, qual o poder responsável por elaborar as leis?",
+      "alternativas": [
+        "Poder Executivo",
+        "Poder Judiciário",
+        "Poder Legislativo",
+        "Poder Moderador"
+      ]
+    }
+  ],
+  "gabarito": {
+    "titulo": "Gabarito",
+    "questoes": [
+      {
+        "questao": "Questão 1: Princípio da Dignidade da Pessoa Humana",
+        "pergunta": "Qual é o princípio fundamental da dignidade da pessoa humana na Constituição Federal de 1988?",
+        "alternativas": [
+          "É um dos fundamentos da República Federativa do Brasil."
+        ]
+      },
+      {
+        "questao": "Questão 2: Separação de Poderes - Elaboração de Leis",
+        "pergunta": "De acordo com a Constituição Federal, qual o poder responsável por elaborar as leis?",
+        "alternativas": [
+          "Poder Legislativo"
+        ]
+      }
+    ]
+  }
+}
