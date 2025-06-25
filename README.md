@@ -1,3 +1,5 @@
+![logo](https://github.com/user-attachments/assets/44b4d1ae-fbf1-4011-8159-6d29ff3e99ae)
+
 # 📄 PDFly - Atividades em PDF para Estudantes
 
 [![Deploy on Vercel](https://img.shields.io/badge/deploy-vercel-000?logo=vercel)](https://vercel.com/)
@@ -17,6 +19,8 @@ link de acesso: https://pdflyplus.vercel.app/
 - 📲 Download direto em dispositivos móveis.
 - 🧾 Gabarito incluso automaticamente.
 
+---
+![image](https://github.com/user-attachments/assets/867e2e5f-40ba-4947-b9b0-c7b4757e6fed)
 ---
 
 ## 🚀 Como usar
