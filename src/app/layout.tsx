@@ -38,23 +38,29 @@ export default function RootLayout({
           disableTransitionOnChange>
           {children}
         </ThemeProvider>
+        {/* Chatwoot Widget */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(d,t) {
+                var BASE_URL = "http://18.206.187.99:3000";
+                var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                g.src = BASE_URL + "/packs/js/sdk.js";
+                g.defer = true;
+                g.async = true;
+                s.parentNode.insertBefore(g,s);
+                g.onload = function(){
+                  window.chatwootSDK.run({
+                    websiteToken: 'LESsJtCyLE4DSJmb9GfyXRkJ',
+                    baseUrl: BASE_URL
+                  })
+                }
+              })(document, "script");
+            `,
+          }}
+        />
       </body>
-    <script>
-      (function(d,t) {
-    var BASE_URL="http://0.0.0.0:3000";
-    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=BASE_URL+"/packs/js/sdk.js";
-    g.defer = true;
-    g.async = true;
-    s.parentNode.insertBefore(g,s);
-    g.onload=function(){
-      window.chatwootSDK.run({
-        websiteToken: 'LESsJtCyLE4DSJmb9GfyXRkJ',
-        baseUrl: BASE_URL
-      })
-    }
-  })(document,"script");
-    </script>    
+  
     </html>
     
   );
