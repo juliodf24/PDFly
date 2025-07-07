@@ -39,7 +39,8 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
-        (function(d,t) {
+    <script>
+      (function(d,t) {
     var BASE_URL="http://0.0.0.0:3000";
     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=BASE_URL+"/packs/js/sdk.js";
@@ -53,6 +54,8 @@ export default function RootLayout({
       })
     }
   })(document,"script");
+    </script>    
     </html>
+    
   );
 }
