@@ -43,7 +43,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function(d,t) {
-                var BASE_URL = "http://18.206.187.99:3000";
+                var BASE_URL = "http://18.206.187.99";
                 var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
                 g.src = BASE_URL + "/packs/js/sdk.js";
                 g.defer = true;
